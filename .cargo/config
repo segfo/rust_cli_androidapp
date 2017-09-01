@@ -1,0 +1,13 @@
+[target.aarch64-linux-android]
+linker = "/mnt/c/android-ndk-r14b-linux-x86_64/android-ndk-r14b/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/bin/aarch64-linux-android-gcc"
+rustflags = [
+  "-C", "link-arg=--sysroot=/mnt/c/android-ndk-r14b-linux-x86_64/android-ndk-r14b/platforms/android-21/arch-arm64/",
+  "-C", "link-arg=-pie",
+]
+
+[target.arm-linux-androideabi]
+linker = "/mnt/c/android-ndk-r14b-linux-x86_64/android-ndk-r14b/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc"
+rustflags = [
+  "-C", "link-arg=--sysroot=/mnt/c/android-ndk-r14b-linux-x86_64/android-ndk-r14b/platforms/android-19/arch-arm/",
+  "-C", "link-arg=-pie",
+]

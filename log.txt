@@ -1,0 +1,18 @@
+   Compiling testCross v0.1.0 (file:///mnt/c/Users/segfo/Desktop/vmShare/testCodes/testCross)
+warning: crate `testCross` should have a snake case name such as `test_cross`
+  |
+  = note: #[warn(non_snake_case)] on by default
+
+error: linking with `arm-linux-androideabi-gcc` failed: exit code: 1
+  |
+  = note: "arm-linux-androideabi-gcc" "-Wl,--as-needed" "-Wl,-z,noexecstack" "-Wl,--allow-multiple-definition" "-L" "/home/segfo/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/arm-linux-androideabi/lib" "/mnt/c/Users/segfo/Desktop/vmShare/testCodes/testCross/target/arm-linux-androideabi/debug/deps/testCross-16f73545caa31234.0.o" "-o" "/mnt/c/Users/segfo/Desktop/vmShare/testCodes/testCross/target/arm-linux-androideabi/debug/deps/testCross-16f73545caa31234" "/mnt/c/Users/segfo/Desktop/vmShare/testCodes/testCross/target/arm-linux-androideabi/debug/deps/testCross-16f73545caa31234.crate.allocator.o" "-Wl,--gc-sections" "-pie" "-Wl,-z,relro,-z,now" "-nodefaultlibs" "-L" "/mnt/c/Users/segfo/Desktop/vmShare/testCodes/testCross/target/arm-linux-androideabi/debug/deps" "-L" "/mnt/c/Users/segfo/Desktop/vmShare/testCodes/testCross/target/debug/deps" "-L" "/home/segfo/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/arm-linux-androideabi/lib" "-Wl,-Bstatic" "/home/segfo/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/arm-linux-androideabi/lib/libstd-51f2718e8350c00a.rlib" "/home/segfo/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/arm-linux-androideabi/lib/librand-47b74e5d604545aa.rlib" "/home/segfo/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/arm-linux-androideabi/lib/liballoc_jemalloc-89568ce5ec3ad632.rlib" "/home/segfo/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/arm-linux-androideabi/lib/liballoc_system-d780d929de96a019.rlib" "/home/segfo/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/arm-linux-androideabi/lib/libpanic_unwind-6b5f9ec1fe1dba97.rlib" "/home/segfo/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/arm-linux-androideabi/lib/libunwind-86deec0716f9d53c.rlib" "/home/segfo/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/arm-linux-androideabi/lib/liblibc-68c3640b2c4ae147.rlib" "/home/segfo/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/arm-linux-androideabi/lib/liballoc-8a3eb950a5c3b4c3.rlib" "/home/segfo/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/arm-linux-androideabi/lib/libstd_unicode-515d1898bdce61e4.rlib" "/home/segfo/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/arm-linux-androideabi/lib/libcore-5462014aec34d15c.rlib" "/home/segfo/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/arm-linux-androideabi/lib/libcompiler_builtins-6461196106a4cbba.rlib" "-Wl,-Bdynamic" "-l" "dl" "-l" "log" "-l" "gcc" "-l" "gcc" "-l" "c" "-l" "m"
+  = note: /usr/lib/gcc/arm-linux-androideabi/4.7.4/../../../../arm-linux-androideabi/bin/ld: error: cannot find -llog
+          /usr/lib/gcc/arm-linux-androideabi/4.7.4/libgcc.a(linux-atomic-64bit.o):function __check_for_sync8_kernelhelper: error: undefined reference to '__write'
+          collect2: error: ld returned 1 exit status
+          
+
+error: aborting due to previous error
+
+error: Could not compile `testCross`.
+
+To learn more, run the command again with --verbose.
