@@ -43,8 +43,8 @@ C:
   
 ここまでセットしたら後は4番の手順  
   
-4. rust_cli_androidapp > bash  
+4. PS C:\Users\(...)\rust_cli_androidapp > bash  
   
-5. /mnt/c/Users(...)/rust_cli_androidapp $ cargo build --target arm-linux-androideabi  
+5. /mnt/c/Users/(...)/rust_cli_androidapp $ cargo build --target arm-linux-androideabi  
 
-6. /mnt/c/Users(...)/rust_cli_androidapp $ cargo build --target aarch64-linux-android
+6. /mnt/c/Users/(...)/rust_cli_androidapp $ cargo build --target aarch64-linux-android
