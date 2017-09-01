@@ -43,4 +43,6 @@ C:
   
 ここまでセットしたら後は4番の手順  
   
-4. cargo build  
+4. rust_cli_androidapp > bash  
+  
+5. /mnt/c/Users(...)/rust_cli_androidapp $ cargo build  
